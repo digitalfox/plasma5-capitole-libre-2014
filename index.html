@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>KDE Plasma 5 - capitole du libre 2014</title>
+
+	<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/default.css" id="theme">
+	<link rel="stylesheet" href="css/fox.css">
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<div class="slides">
+
+			<section data-background="img/splash.png">
+				<h1>Plasma &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+				<p>Le nouveau bureau graphique de la communauté KDE</p>				
+				<aside class="notes">
+				bonjour et merci d'être là pour cette présentation de Plasma5, le nouveau bureau de la communauté KDE<br/>
+				</aside>
+			</section>
+			
+			<section>
+				<h2>À propos...</h2>
+				<ul>
+				  <li><strong>Sébastien Renard</strong></li>
+				  <li>Traduction KDE</li>
+				  <li>Développeur python</li>
+				  <img src="img/enioka.png"/ style="background:none;border:none;box-shadow:none;width:70%;">
+				</ul>
+				<aside class="notes">
+				Hacker de longue date, contributeur KDE depuis plus de 12 ans<br/>
+				Développeur de plusieurs logiciels libres. Principaux : Pysql, Pydici et  Yokadi<br/>
+				Vie pro : directeur général d'une société de conseil en architecture des systèmes d'information. On recrute :-)
+				</aside>
+			</section>
+			<section data-background="img/splash.png">
+			</section>
+			<section data-background="img/desktop.png">
+				<h2>KDE4, Plasma 5 ?</h2>
+				<aside class="notes">
+				Pourquoi pas KDE 5 ?<br/>
+				KDE : bureau, projet, communauté<br/>
+				KDE : un peu plus qu'un bureau, une communauté qui produit : des logiciels, gère et organise des projets de développement, propose un cadre légal pour protéger les développeurs, assure la liberté de Qt avec la Qt Foundation<br/>
+				=> choix d'une évolution du modèle avec un découpage de KDE4
+				</aside>
+			</section>
+			<section>
+				<h2>Pas de KDE 5 mais...</h2>
+				<ul>
+				  <li class="fragment">KDE frameworks 5</li>
+				  <li class="fragment">KDE plasma 5</li>
+				  <li class="fragment">KDE applications 5</li>
+				</ul>
+				
+				<aside class="notes">
+				frameworks : KDElibs4 : fondation de KDE 1, 2, 3 et 4. Beaucoup de fonctionnalités mais très monolithique<br/>
+				  - Souhait d'utilisation plus large, au delà des applications KDE<br/>
+				  - Souhait de cohabitation avec KDElibs 4<br/>
+				Plasma5 : le bureau construit avec Qt5 et frameworks5. Accueille aussi bien les appli5 et KDE4
+				Applications 5 : l'ensemble des applications construite pour plasma5 
+				</aside>
+			</section>
+			<section>
+				<h2>Plasma 5... quoi de neuf ?</h2>
+				<ul>
+				  <li class="fragment">Passage à Qt5 et frameworks5</li>
+				  <li class="fragment">Un bon prétexte pour réécrire des choses :-)</li>
+				  <li class="fragment">Une intégration progressive avec Wayland</li>
+				  <li class="fragment">Une refonte visuelle avec une démarche collaborative</li>
+				</ul>
+				
+				<aside class="notes">
+				    Qt 5 et surtout QtQuick 2 avec accélération Open GL(ES)<br/>
+				    Démarche design collaborative plutôt inédite... cf. page suivante  
+				</aside>
+			</section>
+			<section>
+				<h2>KDE Visual Design Group</h2>
+				<ul>
+				  <li class="fragment">Ouvert, participatif</li>
+				  <li class="fragment">Contre pied de la tour d'ivoire et du design hero</li>
+				  <li class="fragment">Design durable</li>
+				  <li class="fragment">Proximité forte des développeurs</li>
+				</ul>
+				
+				<aside class="notes">
+				    Adapter au design ce qui fait le succès du logiciel libre.<br/>
+				    Beaucoup de mythes et de peurs sur la capacité d'un groupe à avoir une vision<br>
+				    Même critiques que pour le logiciel<br/>
+				    Jugez sur le résultat !
+				</aside>
+			</section>
+
+		
+		</div>
+
+	</div>
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+
+		Reveal.initialize({
+		    slideNumber: true,
+		    history: true,
+		    dependencies: [
+			// Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+			//{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+
+			// Interpret Markdown in <section> elements
+ 			{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ 			{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ 
+			// Syntax highlight for <code> elements
+			{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+
+			// Zoom in and out with Alt+click
+			//{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+
+			// Speaker notes
+			{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+
+			// Remote control your reveal.js presentation using a touch device
+ 			//{ src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } },
+		    ]
+});
+
+	</script>
+
+</body>
+</html>
